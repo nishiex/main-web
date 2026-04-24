@@ -1,8 +1,9 @@
 import { Metadata } from "next"
 import { PageLayout } from "@/components/page-layout"
 import {
-  Breadcrumb, PageHero, SectionHeading, FaqSection, RelatedCards, NextStepBand, CompareTable,
+  Breadcrumb, PageHero, SectionHeading, RelatedCards, NextStepBand, CompareTable,
 } from "@/components/page-parts"
+import { Faq } from "@/components/faq"
 import { Check, Globe, Smartphone, Zap, Shield, PhoneCall, Users, Briefcase, Building, UserCheck } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -212,7 +213,7 @@ export default function VirtualNumberPage() {
         />
       </section>
 
-      <FaqSection items={FAQS} />
+      <Faq />
       <RelatedCards heading="Explore other number types" cards={RELATED} />
       <NextStepBand
         heading="Get a virtual number today."

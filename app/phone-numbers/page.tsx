@@ -1,8 +1,9 @@
 import { Metadata } from "next"
 import { PageLayout } from "@/components/page-layout"
 import {
-  Breadcrumb, PageHero, SectionHeading, FaqSection, RelatedCards, NextStepBand,
+  Breadcrumb, PageHero, SectionHeading, RelatedCards, NextStepBand,
 } from "@/components/page-parts"
+import { Faq } from "@/components/faq"
 import {
   Globe, MapPin, Sparkles, Briefcase, Smartphone, ArrowRight, Check,
   PhoneCall, MessageSquare, Shield, Zap,
@@ -246,7 +247,7 @@ export default function PhoneNumbersHub() {
         </div>
       </section>
 
-      <FaqSection items={FAQS} />
+      <Faq />
       <RelatedCards heading="Related pages" cards={RELATED} />
       <NextStepBand
         heading="Five number types. One 14-day trial."

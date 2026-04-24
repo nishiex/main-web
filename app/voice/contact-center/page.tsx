@@ -451,10 +451,7 @@ export default function ContactCenterPage() {
         />
 
         {/* ── FAQ ──────────────────────────────────────────────── */}
-        <Faq
-          items={FAQS}
-          heading="Common questions about the contact center."
-        />
+        <Faq />
 
         {/* ── FINAL CTA ────────────────────────────────────────── */}
         <FinalCta

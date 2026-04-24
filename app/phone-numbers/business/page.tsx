@@ -1,6 +1,7 @@
 import { Metadata } from "next"
 import { PageLayout } from "@/components/page-layout"
-import { Breadcrumb, PageHero, SectionHeading, FaqSection, NextStepBand } from "@/components/page-parts"
+import { Breadcrumb, PageHero, SectionHeading, NextStepBand } from "@/components/page-parts"
+import { Faq } from "@/components/faq"
 import { Check } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -85,7 +86,7 @@ export default function BusinessNumberPage() {
         </div>
       </section>
 
-      <FaqSection items={FAQS} />
+      <Faq />
       <NextStepBand
         primary={{ label: "Start 14-day free trial", href: "/pricing" }}
         secondary={{ label: "Explore second numbers", href: "/phone-numbers/second-number" }}

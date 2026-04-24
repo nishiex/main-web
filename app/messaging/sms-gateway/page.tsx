@@ -1,6 +1,7 @@
 import { Metadata } from "next"
 import { PageLayout } from "@/components/page-layout"
-import { Breadcrumb, FaqSection, NextStepBand } from "@/components/page-parts"
+import { Breadcrumb, NextStepBand } from "@/components/page-parts"
+import { Faq } from "@/components/faq"
 
 export const metadata: Metadata = {
   title: "SMS Gateway · Business Messaging That Gets Read | Twiching",
@@ -181,7 +182,7 @@ export default function SmsGatewayPage() {
       </section>
 
       {/* FAQ */}
-      <FaqSection items={FAQS} />
+      <Faq />
 
       {/* CTA */}
       <NextStepBand

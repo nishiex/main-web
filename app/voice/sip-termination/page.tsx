@@ -379,10 +379,7 @@ export default function SipTerminationPage() {
         />
 
         {/* ── FAQ ──────────────────────────────────────────────── */}
-        <Faq
-          items={FAQS}
-          heading="Common questions about SIP termination."
-        />
+        <Faq />
 
         {/* ── FINAL CTA ────────────────────────────────────────── */}
         <FinalCta

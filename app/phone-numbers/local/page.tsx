@@ -1,8 +1,9 @@
 import { Metadata } from "next"
 import { PageLayout } from "@/components/page-layout"
 import {
-  Breadcrumb, PageHero, SectionHeading, FaqSection, RelatedCards, NextStepBand,
+  Breadcrumb, PageHero, SectionHeading, RelatedCards, NextStepBand,
 } from "@/components/page-parts"
+import { Faq } from "@/components/faq"
 import { Check, MapPin, TrendingUp, Globe, Layers, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -284,7 +285,7 @@ export default function LocalNumberPage() {
         </div>
       </section>
 
-      <FaqSection items={FAQS} />
+      <Faq />
       <RelatedCards heading="Explore other number types" cards={RELATED} />
       <NextStepBand
         heading="Your next market is one local number away."

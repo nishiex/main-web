@@ -1,6 +1,7 @@
 import { Metadata } from "next"
 import { PageLayout } from "@/components/page-layout"
-import { Breadcrumb, PageHero, SectionHeading, FaqSection, NextStepBand } from "@/components/page-parts"
+import { Breadcrumb, PageHero, SectionHeading, NextStepBand } from "@/components/page-parts"
+import { Faq } from "@/components/faq"
 
 export const metadata: Metadata = {
   title: "Voice Termination · Global Call Delivery | Twiching",
@@ -79,7 +80,7 @@ export default function VoiceTerminationPage() {
         </div>
       </section>
 
-      <FaqSection items={FAQS} />
+      <Faq />
       <NextStepBand
         primary={{ label: "Start free trial", href: "/pricing" }}
         secondary={{ label: "See SIP termination", href: "/voice/sip-termination" }}

@@ -1,6 +1,7 @@
 import { Metadata } from "next"
 import { PageLayout } from "@/components/page-layout"
-import { Breadcrumb, TrustBar, SectionHeading, FaqSection } from "@/components/page-parts"
+import { Breadcrumb, TrustBar, SectionHeading } from "@/components/page-parts"
+import { Faq } from "@/components/faq"
 import { Check, Minus, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -266,7 +267,7 @@ export default function PricingPage() {
         </div>
       </section>
 
-      <FaqSection items={FAQS} />
+      <Faq />
 
       {/* Final CTA */}
       <section className="bg-accent py-16 mt-8">

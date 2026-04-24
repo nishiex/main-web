@@ -1,6 +1,7 @@
 import { Metadata } from "next"
 import { PageLayout } from "@/components/page-layout"
-import { Breadcrumb, PageHero, SectionHeading, FaqSection, NextStepBand } from "@/components/page-parts"
+import { Breadcrumb, PageHero, SectionHeading, NextStepBand } from "@/components/page-parts"
+import { Faq } from "@/components/faq"
 import { MessageSquare, Megaphone, Code2, ArrowRight, Shield } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -96,7 +97,7 @@ export default function MessagingHub() {
         </div>
       </section>
 
-      <FaqSection items={FAQS} />
+      <Faq />
       <NextStepBand
         primary={{ label: "Start free trial", href: "/pricing" }}
         secondary={{ label: "Explore SMS Gateway", href: "/messaging/sms-gateway" }}

@@ -1,6 +1,7 @@
 import { Metadata } from "next"
 import { PageLayout } from "@/components/page-layout"
-import { Breadcrumb, PageHero, SectionHeading, FaqSection, NextStepBand } from "@/components/page-parts"
+import { Breadcrumb, PageHero, SectionHeading, NextStepBand } from "@/components/page-parts"
+import { Faq } from "@/components/faq"
 
 export const metadata: Metadata = {
   title: "Bulk SMS · Campaign-Grade Outreach at Scale | Twiching",
@@ -75,7 +76,7 @@ export default function BulkSmsPage() {
         </div>
       </section>
 
-      <FaqSection items={FAQS} />
+      <Faq />
       <NextStepBand
         primary={{ label: "Start free trial", href: "/pricing" }}
         secondary={{ label: "See SMS API", href: "/messaging/sms-api" }}

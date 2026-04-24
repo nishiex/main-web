@@ -1,6 +1,7 @@
 import { Metadata } from "next"
 import { PageLayout } from "@/components/page-layout"
-import { Breadcrumb, PageHero, SectionHeading, FaqSection, NextStepBand } from "@/components/page-parts"
+import { Breadcrumb, PageHero, SectionHeading, NextStepBand } from "@/components/page-parts"
+import { Faq } from "@/components/faq"
 import { PhoneCall, Network, Building2, Headphones, PhoneIncoming, ArrowRight, Shield } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -100,7 +101,7 @@ export default function VoiceHub() {
         </div>
       </section>
 
-      <FaqSection items={FAQS} />
+      <Faq />
       <NextStepBand
         primary={{ label: "Explore voice termination", href: "/voice/termination" }}
         secondary={{ label: "See pricing", href: "/pricing" }}

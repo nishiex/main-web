@@ -375,10 +375,7 @@ export default function VoipWholesalePage() {
         />
 
         {/* ── FAQ ──────────────────────────────────────────────── */}
-        <Faq
-          items={FAQS}
-          heading="Common questions about VoIP wholesale."
-        />
+        <Faq />
 
         {/* ── FINAL CTA ────────────────────────────────────────── */}
         <FinalCta
