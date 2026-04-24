@@ -116,7 +116,7 @@ export default function VoipWholesalePage() {
             }}
           />
 
-          <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             {/* Breadcrumb */}
             <nav className="pt-5 pb-0 mb-10" aria-label="Breadcrumb">
               <ol className="flex items-center gap-1.5 flex-wrap">
@@ -135,7 +135,7 @@ export default function VoipWholesalePage() {
                 WHOLESALE RATES · CARRIER-GRADE · SCALABLE VOLUME
               </div>
 
-              <h1 className="font-serif text-[48px] sm:text-[62px] lg:text-[76px] font-bold leading-[1.0] tracking-tight text-white text-balance mb-7">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-[1.06] tracking-tight text-white text-balance mb-7">
                 VoIP wholesale rates.{" "}
                 <span className="text-blue-400 italic">Without the carrier runaround.</span>
               </h1>
@@ -184,10 +184,10 @@ export default function VoipWholesalePage() {
         </section>
 
         {/* ── WHO IT'S FOR ─────────────────────────────────────── */}
-        <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
-          <div className="max-w-[1200px] mx-auto">
-            <p className="text-[10px] font-mono font-bold tracking-[2px] uppercase text-accent mb-3">Who wholesale VoIP is for</p>
-            <h2 className="font-serif text-[30px] sm:text-[40px] font-bold leading-tight text-gray-900 mb-12 max-w-[620px] text-balance">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+          <div className="max-w-7xl mx-auto">
+            <p className="text-[10px] font-mono font-bold tracking-[2px] uppercase text-blue-600 mb-3">Who wholesale VoIP is for</p>
+            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900 mb-12 max-w-[620px] text-balance">
               Built for operators who outgrew retail pricing.
             </h2>
 
@@ -209,10 +209,10 @@ export default function VoipWholesalePage() {
         </section>
 
         {/* ── OLD WAY VS NEW WAY ───────────────────────────────── */}
-        <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-950 text-white">
-          <div className="max-w-[1200px] mx-auto">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-950 text-white">
+          <div className="max-w-7xl mx-auto">
             <p className="text-[10px] font-mono font-bold tracking-[2px] uppercase text-blue-400 mb-3">What makes it different</p>
-            <h2 className="font-serif text-[30px] sm:text-[40px] font-bold leading-tight text-white mb-5 max-w-[620px] text-balance">
+            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-white mb-5 max-w-[620px] text-balance">
               Traditional wholesale VoIP means navigating gatekeepers. Twiching doesn&apos;t.
             </h2>
             <p className="text-[15px] text-gray-400 font-mono leading-relaxed max-w-[560px] mb-14">
@@ -267,10 +267,10 @@ export default function VoipWholesalePage() {
         </section>
 
         {/* ── VOLUME TIERS ─────────────────────────────────────── */}
-        <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
-          <div className="max-w-[1200px] mx-auto">
-            <p className="text-[10px] font-mono font-bold tracking-[2px] uppercase text-accent mb-3">Pricing approach</p>
-            <h2 className="font-serif text-[30px] sm:text-[40px] font-bold leading-tight text-gray-900 mb-5 max-w-[560px] text-balance">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+          <div className="max-w-7xl mx-auto">
+            <p className="text-[10px] font-mono font-bold tracking-[2px] uppercase text-blue-600 mb-3">Pricing approach</p>
+            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900 mb-5 max-w-[560px] text-balance">
               Rate structure built around your volume, not theirs.
             </h2>
             <p className="text-[15px] text-gray-500 font-mono leading-relaxed max-w-[580px] mb-14">
@@ -346,8 +346,8 @@ export default function VoipWholesalePage() {
         </section>
 
         {/* ── WHAT YOU GET STRIP ───────────────────────────────── */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-          <div className="max-w-[1200px] mx-auto">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+          <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
               {[
                 { Icon: ShieldCheck, title: "Carrier-grade routing", body: "Tier-1 carrier connections. No reseller chains. Your calls don't bounce around three middlemen before hitting the PSTN." },

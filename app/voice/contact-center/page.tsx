@@ -164,8 +164,8 @@ export default function ContactCenterPage() {
             </ol>
           </nav>
 
-          <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
-            <div className="max-w-[780px]">
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
+            <div className="max-w-[800px]">
               {/* Eyebrow */}
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/15 text-blue-300 text-xs font-semibold font-mono px-4 py-[6px] rounded-full mb-7">
                 <span className="relative flex h-1.5 w-1.5">
@@ -175,7 +175,7 @@ export default function ContactCenterPage() {
                 CLOUD CONTACT CENTER · OMNICHANNEL · AI-READY
               </div>
 
-              <h1 className="font-serif text-[46px] sm:text-[58px] lg:text-[68px] font-bold leading-[1.04] tracking-tight text-white text-balance mb-7">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-[1.06] tracking-tight text-white text-balance mb-7">
                 A contact center that{" "}
                 <span className="text-blue-400 italic">doesn&apos;t fight</span>{" "}
                 your team.
@@ -225,8 +225,8 @@ export default function ContactCenterPage() {
         </section>
 
         {/* ── CHANNEL STRIP ────────────────────────────────────── */}
-        <section className="bg-gray-950 text-white border-b border-white/8 py-16 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-[1200px] mx-auto">
+        <section className="bg-gray-950 text-white border-b border-white/8 py-20 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
             <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
               <div className="max-w-[420px]">
                 <p className="text-[10px] font-mono font-bold tracking-[2px] uppercase text-blue-400 mb-3">Omnichannel</p>
@@ -257,8 +257,8 @@ export default function ContactCenterPage() {
         </section>
 
         {/* ── STATS STRIP ──────────────────────────────────────── */}
-        <section className="bg-black py-16 px-4 sm:px-6 lg:px-8 border-b border-white/8">
-          <div className="max-w-[1200px] mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <section className="bg-black py-20 px-4 sm:px-6 lg:px-8 border-b border-white/8">
+          <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6">
             {STATS.map(({ value, label, caption }) => (
               <div key={label} className="relative rounded-2xl bg-white/5 ring-1 ring-white/8 p-6 overflow-hidden">
                 <div
@@ -274,10 +274,10 @@ export default function ContactCenterPage() {
         </section>
 
         {/* ── TABS: FEATURE DEEP-DIVE ──────────────────────────── */}
-        <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
-          <div className="max-w-[1200px] mx-auto">
-            <p className="text-[10px] font-mono font-bold tracking-[2px] uppercase text-accent mb-3">Platform features</p>
-            <h2 className="font-serif text-[32px] sm:text-[42px] font-bold leading-tight text-gray-900 mb-12 max-w-[680px] text-balance">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+          <div className="max-w-7xl mx-auto">
+            <p className="text-[10px] font-mono font-bold tracking-[2px] uppercase text-blue-600 mb-3">Platform features</p>
+            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900 mb-12 max-w-[680px] text-balance">
               Built for teams that need to do more than answer the phone.
             </h2>
 
@@ -365,18 +365,18 @@ export default function ContactCenterPage() {
         </section>
 
         {/* ── COST SAVINGS SECTION ─────────────────────────────── */}
-        <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-950 text-white">
-          <div className="max-w-[1200px] mx-auto">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-950 text-white">
+          <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
                 <p className="text-[10px] font-mono font-bold tracking-[2px] uppercase text-blue-400 mb-4">Cost savings</p>
-                <h2 className="font-serif text-[32px] sm:text-[42px] font-bold leading-tight text-white mb-5 text-balance">
+                <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-white mb-5 text-balance">
                   What it saves at a 50-seat operation.
                 </h2>
-                <p className="text-[15px] text-gray-400 font-mono leading-relaxed mb-8">
-                  Enterprise contact center platforms routinely run $125+ per seat per month. Twiching Enterprise at $29.99 includes contact center features, call recording, AI receptionist, and auto dialers.
+                <p className="text-base text-gray-400 leading-relaxed mb-6">
+                  Enterprise contact center platforms routinely run $125+ per seat per month. Twiching includes contact center features, call recording, AI receptionist, and auto dialers — at a fraction of that cost.
                 </p>
-                <p className="text-[14px] text-gray-500 font-mono leading-relaxed mb-8">
+                <p className="text-[14px] text-gray-500 leading-relaxed mb-8">
                   Whether you&apos;re 10 seats or 100, infrastructure scales without requiring a new platform at every growth stage.
                 </p>
                 <a

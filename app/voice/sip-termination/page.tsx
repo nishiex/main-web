@@ -108,7 +108,7 @@ export default function SipTerminationPage() {
             />
           </div>
 
-          <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Breadcrumb */}
             <nav className="pt-5 pb-0" aria-label="Breadcrumb">
               <ol className="flex items-center gap-1.5 flex-wrap">
@@ -127,7 +127,7 @@ export default function SipTerminationPage() {
                 TLS + SRTP · CARRIER-GRADE · PBX-COMPATIBLE
               </div>
 
-              <h1 className="font-serif text-[42px] sm:text-[54px] lg:text-[62px] font-bold leading-[1.04] tracking-tight text-gray-900 text-balance mb-6">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-[1.06] tracking-tight text-gray-900 text-balance mb-6">
                 SIP termination for businesses that{" "}
                 <span className="text-accent italic">can&apos;t afford downtime.</span>
               </h1>
@@ -175,9 +175,9 @@ export default function SipTerminationPage() {
 
         {/* ── SIP CALL FLOW DIAGRAM ────────────────────────────── */}
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-950 text-white">
-          <div className="max-w-[1200px] mx-auto">
+          <div className="max-w-7xl mx-auto">
             <p className="text-[10px] font-mono font-bold tracking-[2px] uppercase text-blue-400 mb-3">How it works</p>
-            <h2 className="font-serif text-[28px] sm:text-[36px] font-bold leading-tight text-white mb-3">
+            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-white mb-3">
               One config change. Carrier-grade calling.
             </h2>
             <p className="text-[14px] text-gray-400 font-mono leading-relaxed max-w-[560px] mb-16">
@@ -253,10 +253,10 @@ export default function SipTerminationPage() {
         </section>
 
         {/* ── FEATURES GRID ────────────────────────────────────── */}
-        <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
-          <div className="max-w-[1200px] mx-auto">
-            <p className="text-[10px] font-mono font-bold tracking-[2px] uppercase text-accent mb-3">What you get</p>
-            <h2 className="font-serif text-[30px] sm:text-[40px] font-bold leading-tight text-gray-900 mb-14 max-w-[600px] text-balance">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+          <div className="max-w-7xl mx-auto">
+            <p className="text-[10px] font-mono font-bold tracking-[2px] uppercase text-blue-600 mb-3">What you get</p>
+            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900 mb-14 max-w-[600px] text-balance">
               Everything an IT team wants in a SIP trunk. None of what they don&apos;t.
             </h2>
 
@@ -279,7 +279,7 @@ export default function SipTerminationPage() {
 
         {/* ── CODEC TABLE ──────────────────────────────────────── */}
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-          <div className="max-w-[1200px] mx-auto">
+          <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
               {/* Codec table */}
@@ -346,9 +346,9 @@ export default function SipTerminationPage() {
 
         {/* ── WHO USES SIP ─────────────────────────────────────── */}
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-          <div className="max-w-[1200px] mx-auto">
-            <p className="text-[10px] font-mono font-bold tracking-[2px] uppercase text-accent mb-3">Who uses it</p>
-            <h2 className="font-serif text-[28px] sm:text-[36px] font-bold leading-tight text-gray-900 mb-10 max-w-[600px] text-balance">
+          <div className="max-w-7xl mx-auto">
+            <p className="text-[10px] font-mono font-bold tracking-[2px] uppercase text-blue-600 mb-3">Who uses it</p>
+            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900 mb-10 max-w-[600px] text-balance">
               Built for the teams that own the infrastructure.
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
