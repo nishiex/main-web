@@ -1,6 +1,13 @@
 import { Quote } from "lucide-react"
 
-const quotes = [
+export interface TestimonialItem {
+  quote: string
+  name: string
+  role: string
+  initial: string
+}
+
+const defaultQuotes: TestimonialItem[] = [
   {
     quote:
       "Every listing city has its own local number now. Open-house calls actually get answered — no more screened voicemails from unknown prefixes.",
@@ -24,7 +31,17 @@ const quotes = [
   },
 ]
 
-export function Testimonials() {
+interface TestimonialsProps {
+  quotes?: TestimonialItem[]
+  eyebrow?: string
+  heading?: string
+}
+
+export function Testimonials({
+  quotes = defaultQuotes,
+  eyebrow = "What businesses say",
+  heading = "From solo practices to 500-seat teams — Twiching carries the call.",
+}: TestimonialsProps) {
   return (
     <section
       id="s-testi"
@@ -33,10 +50,10 @@ export function Testimonials() {
     >
       <div className="max-w-[1120px] mx-auto">
         <p className="text-xs font-bold tracking-[1.5px] uppercase text-accent mb-3 font-mono">
-          What businesses say
+          {eyebrow}
         </p>
         <h2 className="font-serif text-3xl md:text-4xl font-semibold tracking-tight leading-tight mb-12 max-w-[680px]">
-          From solo practices to 500-seat teams — Twiching carries the call.
+          {heading}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

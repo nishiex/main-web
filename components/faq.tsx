@@ -3,7 +3,12 @@
 import { useState } from "react"
 import { Plus } from "lucide-react"
 
-const faqs = [
+export interface FaqItem {
+  q: string
+  a: string
+}
+
+const defaultFaqs: FaqItem[] = [
   {
     q: "What's included in the 14-day free trial?",
     a: "Up to 3 users, one phone number per user, unlimited internal calls, video conferencing, and team messaging. External calls and SMS activate after compliance verification.",
@@ -26,8 +31,14 @@ const faqs = [
   },
 ]
 
-export function Faq() {
+interface FaqProps {
+  items?: FaqItem[]
+  heading?: string
+}
+
+export function Faq({ items = defaultFaqs, heading = "Questions about Twiching, answered." }: FaqProps) {
   const [open, setOpen] = useState<number | null>(0)
+  const faqs = items
 
   const schema = {
     "@context": "https://schema.org",
@@ -48,7 +59,7 @@ export function Faq() {
       <div className="max-w-[860px] mx-auto">
         <p className="text-xs font-bold tracking-[1.5px] uppercase text-accent mb-3 font-mono">FAQ</p>
         <h2 className="font-serif text-3xl md:text-4xl font-semibold tracking-tight leading-tight mb-10 max-w-[620px]">
-          Questions about Twiching, answered.
+          {heading}
         </h2>
 
         <div className="rounded-3xl ring-1 ring-gray-200/70 bg-white/60 backdrop-blur divide-y divide-gray-100">
