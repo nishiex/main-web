@@ -13,28 +13,28 @@ const menus = {
   numbers: {
     title: "Phone Numbers",
     items: [
-      { title: "Virtual numbers",  desc: "Any area code, routed to any device.",              Icon: Globe },
-      { title: "Local numbers",    desc: "Recognized area codes — 212, 305, 415.",            Icon: MapPin },
-      { title: "Vanity numbers",   desc: "1-800-YOUR-BRAND. Numbers customers remember.",     Icon: Sparkles },
-      { title: "Business numbers", desc: "A dedicated professional line.",                    Icon: Briefcase },
-      { title: "Second numbers",   desc: "Work and life on one phone. Two numbers.",          Icon: PhoneIncoming },
+      { title: "Virtual numbers",  desc: "Any area code, routed to any device.",              Icon: Globe,         href: "/phone-numbers/virtual" },
+      { title: "Local numbers",    desc: "Recognized area codes — 212, 305, 415.",            Icon: MapPin,        href: "/phone-numbers/local" },
+      { title: "Vanity numbers",   desc: "1-800-YOUR-BRAND. Numbers customers remember.",     Icon: Sparkles,      href: "/phone-numbers/vanity" },
+      { title: "Business numbers", desc: "A dedicated professional line.",                    Icon: Briefcase,     href: "/phone-numbers/business" },
+      { title: "Second numbers",   desc: "Work and life on one phone. Two numbers.",          Icon: PhoneIncoming, href: "/phone-numbers/second-number" },
     ],
   },
   voice: {
     title: "Voice",
     items: [
-      { title: "Call termination", desc: "Carrier-grade routing with STIR/SHAKEN.",           Icon: PhoneCall },
-      { title: "SIP trunking",     desc: "Drop into Asterisk, 3CX, FreePBX.",                 Icon: Network },
-      { title: "VoIP wholesale",   desc: "Transparent rates for BPOs and resellers.",         Icon: Building2 },
-      { title: "Contact center",   desc: "Inbound and outbound tools for any team size.",     Icon: Headphones },
+      { title: "Call termination", desc: "Carrier-grade routing with STIR/SHAKEN.",           Icon: PhoneCall,  href: "/voice/termination" },
+      { title: "SIP trunking",     desc: "Drop into Asterisk, 3CX, FreePBX.",                 Icon: Network,    href: "/voice/sip-termination" },
+      { title: "VoIP wholesale",   desc: "Transparent rates for BPOs and resellers.",         Icon: Building2,  href: "/voice/voip-wholesale" },
+      { title: "Contact center",   desc: "Inbound and outbound tools for any team size.",     Icon: Headphones, href: "/voice/contact-center" },
     ],
   },
   messaging: {
     title: "Messaging",
     items: [
-      { title: "SMS gateway", desc: "Multi-channel messaging from one dashboard.",            Icon: MessageSquare },
-      { title: "Bulk SMS",    desc: "Campaign-grade outreach with delivery receipts.",        Icon: Megaphone },
-      { title: "SMS API",     desc: "Developer integration in under a day.",                  Icon: Code2 },
+      { title: "SMS gateway", desc: "Multi-channel messaging from one dashboard.",            Icon: MessageSquare, href: "/messaging/sms-gateway" },
+      { title: "Bulk SMS",    desc: "Campaign-grade outreach with delivery receipts.",        Icon: Megaphone,     href: "/messaging/bulk-sms" },
+      { title: "SMS API",     desc: "Developer integration in under a day.",                  Icon: Code2,         href: "/messaging/sms-api" },
     ],
   },
 } as const
@@ -115,10 +115,11 @@ export function MegaNav() {
           onMouseEnter={() => setOpen(open)}
         >
           <div className="max-w-[1200px] mx-auto px-[5%] py-8 grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-3">
-            {menus[open].items.map(({ title, desc, Icon }) => (
+            {menus[open].items.map(({ title, desc, Icon, href }) => (
               <a
                 key={title}
-                href="#"
+                href={href}
+                onClick={() => setOpen(null)}
                 className="flex items-start gap-3 p-3 rounded-2xl hover:bg-slate-50 transition-colors"
               >
                 <span className="mt-0.5 w-9 h-9 rounded-xl bg-blue-50 text-accent grid place-items-center flex-shrink-0">
@@ -153,10 +154,10 @@ export function MegaNav() {
                 </button>
                 {mobileSection === key && (
                   <div className="ml-3 mt-1 space-y-1 pb-2">
-                    {menus[key].items.map(({ title, desc, Icon }) => (
+                    {menus[key].items.map(({ title, desc, Icon, href }) => (
                       <a
                         key={title}
-                        href="#"
+                        href={href}
                         onClick={() => setMobileOpen(false)}
                         className="flex items-start gap-3 px-3 py-2.5 rounded-xl hover:bg-slate-50 transition-colors"
                       >
